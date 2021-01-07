@@ -1,4 +1,10 @@
- Committer: Amir <amir@MacBook-Air-de-Amir.local>
+
+
+
+
+
+
+ committej: Amir <amir@MacBook-Air-de-Amir.local>
 Your name and email address were configured automatically based
 on your username and hostname. Please check that they are accurate.
 You can suppress this message by setting them explicitly. Run the
@@ -34,4 +40,69 @@ commit 290cbdc59b2f4d1fee46059648bba677665a8ab8
 Author: Gerald Geniaut <gerald.geniaut@campus-condorcet.fr>
 Date:   Thu Jan 7 14:08:21 2021 +0100
 
+ Committer: Amir <amir@MacBook-Air-de-Amir.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
 
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 22 insertions(+), 1 deletion(-)
+amir@MacBook-Air-de-Amir tp01-2021 % git checkout master
+M	Fiche01.txt
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+amir@MacBook-Air-de-Amir tp01-2021 % touch resultat_master.txt
+amir@MacBook-Air-de-Amir tp01-2021 % git log
+commit 32665a43e5a7eae468a18f51ad8f4df640ada5b3 (HEAD -> master, origin/master, origin/HEAD)
+Author: Gerald Geniaut <gerald.geniaut@campus-condorcet.fr>
+Date:   Thu Jan 7 14:52:19 2021 +0100
+
+    Ajout des infos sur push
+
+commit 3e83647b316220d13dd995eadf6b92595e00e81e
+Author: Gerald Geniaut <gerald.geniaut@campus-condorcet.fr>
+Date:   Thu Jan 7 14:40:38 2021 +0100
+
+    Ajout du cours linux
+
+commit 290cbdc59b2f4d1fee46059648bba677665a8ab8
+Author: Gerald Geniaut <gerald.geniaut@campus-condorcet.fr>
+Date:   Thu Jan 7 14:08:21 2021 +0
+amir@MacBook-Air-de-Amir tp01-2021 % git commit -m "Ajout de git log dans resultat_master "
+[master 1d740bb] Ajout de git log dans resultat_master
+ Committer: Amir <amir@MacBook-Air-de-Amir.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 37 insertions(+)
+ create mode 100644 resultat_master.txt
+amir@MacBook-Air-de-Amir tp01-2021 % vi resultat_master.txt
+amir@MacBook-Air-de-Amir tp01-2021 % git status            
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Fiche01.txt
+	modified:   resultat_master.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
